@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apple store</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  
 </head>
 <body>
 
@@ -84,7 +84,12 @@
               <button onclick="increase(this)">+</button>
             </div>
           </div>
-          <button class="cart_btn"> Add to Cart</button>
+          <button class="cart_btn"  onclick="addToCart(
+            'iPad Pro ',
+            139900,
+            'src/product-card/ipads/image1.webp',
+            this
+            )" > Add to Cart</button>
           
         </div>
 
@@ -105,7 +110,12 @@
               <button onclick="increase(this)">+</button>
             </div>
           </div>
-          <button class="cart_btn"> Add to Cart</button>
+          <button class="cart_btn" onclick="addToCart(
+            'iPad Air ',
+            89900,
+            'src/product-card/ipads/image2.webp',
+            this
+            )" > Add to Cart</button>
           
         </div>
 
@@ -126,7 +136,12 @@
               <button onclick="increase(this)">+</button>
             </div>
           </div>
-          <button class="cart_btn"> Add to Cart</button>
+          <button class="cart_btn"  onclick="addToCart(
+            'iPad ',
+            49900,
+            'src/product-card/ipads/image3.webp',
+            this
+            )" > Add to Cart</button>
           
         </div>
 
@@ -147,7 +162,12 @@
               <button onclick="increase(this)">+</button>
             </div>
           </div>
-          <button class="cart_btn"> Add to Cart</button>
+          <button class="cart_btn"  onclick="addToCart(
+            'iPad mini ',
+            134900,
+            'src/product-card/ipads/image4.webp',
+            this
+            )" > Add to Cart</button>
           
         </div>
 
@@ -158,6 +178,6 @@
   </div>
 
 
-  
+  <script src="script.js"></script>
 </body>
 </html>

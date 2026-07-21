@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apple store</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  
 </head>
 <body>
 
@@ -84,7 +84,12 @@
               <button onclick="increase(this)">+</button>
             </div>
           </div>
-          <button class="cart_btn"> Add to Cart</button>
+          <button class="cart_btn"  onclick="addToCart(
+            'Apple Watch Series 11 ',
+            46900,
+            'src/product-card/apple watches/image1.webp',
+            this
+            )" > Add to Cart</button>
           
         </div>
 
@@ -105,7 +110,12 @@
               <button onclick="increase(this)">+</button>
             </div>
           </div>
-          <button class="cart_btn"> Add to Cart</button>
+          <button class="cart_btn" onclick="addToCart(
+            'Apple Watch SE 3 ',
+            25900,
+            'src/product-card/apple watches/image2.webp',
+            this
+            )" > Add to Cart</button>
           
         </div>
 
@@ -126,7 +136,12 @@
               <button onclick="increase(this)">+</button>
             </div>
           </div>
-          <button class="cart_btn"> Add to Cart</button>
+          <button class="cart_btn" onclick="addToCart(
+            'Apple Watch Ultra 3 ',
+            89900,
+            'src/product-card/apple watches/image3.webp',
+            this
+            )" > Add to Cart</button>
           
         </div>
 
@@ -138,6 +153,6 @@
   </div>
 
 
-  
+  <script src="script.js"></script>
 </body>
 </html>

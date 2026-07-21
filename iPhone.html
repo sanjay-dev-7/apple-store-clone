@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apple store</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  
 </head>
 <body>
 
@@ -73,18 +73,23 @@
           <h2 style="font-size: 25px;  " >iPhone 17 Pro & <br>iPhone 17 Pro Max</h2>
           
         </div>
-        <img style="width: 80%; top: 15%; left: 10%;" src="src\product-card\iphones\images.jpg" alt="iphone17pro">
+        <img style="width: 80%; top: 15%; left: 10%;" src="src\product-card\iphones\images.webp" alt="iphone17pro">
 
         <div class="product_bottom">
           <div class="price_section">
             <p class="price">From ₹ 21650.00/mo. with instant casback* <br> and No Cost EMI or ₹134900.00</p>
             <div class="quantity">
               <button onclick="decrease(this)">-</button>
-              <span id="qty">1</span>
+              <span >1</span>
               <button onclick="increase(this)">+</button>
             </div>
           </div>
-          <button class="cart_btn"> Add to Cart</button>
+          <button class="cart_btn" onclick="addToCart(
+            'iPhone 17 Pro Max',
+            134900,
+            'src/product-card/iphones/images.webp',
+            this
+            )" > Add to Cart</button>
           
         </div>
 
@@ -105,7 +110,12 @@
               <button onclick="increase(this)">+</button>
             </div>
           </div>
-          <button class="cart_btn"> Add to Cart</button>
+          <button class="cart_btn" onclick="addToCart(
+            'iPhone Air ',
+            119900,
+            'src/product-card/iphones/image1.jpg',
+            this
+            )" > Add to Cart</button>
           
         </div>
 
@@ -115,18 +125,23 @@
           <h2 style="font-size: 25px;  " >iPhone 17  </h2>
           
         </div>
-        <img style="width: 112%; top: 5%;  right: -6%;" src="src\product-card\iphones\image2.webp" alt="iphone17pro">
+        <img style="width: 84%; top: 10%;  right: 8%;" src="src\product-card\iphones\image1.webp" alt="iphone17pro">
 
         <div class="product_bottom">
           <div class="price_section">
             <p class="price">From ₹14468.00/mo. with EMI ,or <br> ₹82900.00  </p>
-            <div class="quantity">this
+            <div class="quantity">
               <button onclick="decrease(this)">-</button>
               <span id="qty">1</span>
               <button onclick="increase(this)">+</button>
             </div>
           </div>
-          <button class="cart_btn"> Add to Cart</button>
+          <button class="cart_btn" onclick="addToCart(
+            'iPhone 17 ',
+            82900,
+            'src/product-card/iphones/image1.webp',
+            this
+            )"> Add to Cart</button>
           
         </div>
 
@@ -147,7 +162,12 @@
               <button onclick="increase(this)">+</button>
             </div>
           </div>
-          <button class="cart_btn"> Add to Cart</button>
+          <button class="cart_btn" onclick="addToCart(
+            'iPhone 17e ',
+            64900,
+            'src/product-card/iphones/image3.webp',
+            this
+            )" > Add to Cart</button>
           
         </div>
 
@@ -168,7 +188,12 @@
               <button onclick="increase(this)">+</button>
             </div>
           </div>
-          <button class="cart_btn"> Add to Cart</button>
+          <button class="cart_btn" onclick="addToCart(
+            'iPhone 16 Plus ',
+            69900,
+            'src/product-card/iphones/image4.webp',
+            this
+            )" > Add to Cart</button>
           
         </div>
 
@@ -178,6 +203,6 @@
   </div>
 
 
-  
+   <script src="script.js"></script>
 </body>
 </html>

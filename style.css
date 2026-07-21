@@ -327,9 +327,10 @@ product_content span{
   height: 28px;
   border: none;
   border-radius: 50%;
-  background-color: #e5e5e5;
+  background-color: #0071e3;
   cursor: pointer;
   font-size: 18px;
+  color: white;
 }
 .quantity span{
   font-size: 18px;
@@ -355,3 +356,4 @@ product_content span{
 .cart_btn:hover{
   background-color: #3c6d9e;
 }
+
