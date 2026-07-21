@@ -1,5 +1,3 @@
-
-
 function increase(btn) {
     let quantity = btn.previousElementSibling;
     let value = parseInt(quantity.innerText);

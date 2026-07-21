@@ -320,3 +320,59 @@ body{
 }
 
 
+
+/* ========================================================= */
+/* ADDITIONAL RESPONSIVE / MOBILE STYLES                      */
+/* ========================================================= */
+
+@media (max-width: 600px) {
+
+  .cart_page{
+    width:94%;
+    padding:15px;
+  }
+
+  .cart_page h1{
+    font-size:28px !important;
+    margin-bottom:20px;
+  }
+
+  .cart-item{
+    padding:15px;
+  }
+
+  .cart-item img, .cart-image{
+    width:120px !important;
+    height:120px !important;
+  }
+
+  .details h2{ font-size:20px; }
+  .details p{ font-size:16px; }
+
+  .cart-header{
+    justify-content:center;
+  }
+
+  .clear-cart-btn{
+    width:auto;
+    padding:8px 18px;
+  }
+
+  .summary{
+    padding:20px;
+  }
+
+  .checkout-btn{
+    width:100%;
+    margin-left:0;
+    padding:12px 0;
+  }
+
+  .empty-txt{ font-size:36px; }
+  .empty-txt2{ font-size:20px; }
+
+  .modal-content{
+    width:85%;
+    padding:25px;
+  }
+}

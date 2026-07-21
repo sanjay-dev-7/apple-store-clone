@@ -357,3 +357,156 @@ product_content span{
   background-color: #3c6d9e;
 }
 
+
+/* ========================================================= */
+/* RESPONSIVE / MOBILE STYLES                                 */
+/* ========================================================= */
+
+@media (max-width: 900px) {
+
+  .head_bar{
+    height:auto;
+    flex-direction:column;
+    gap:10px;
+    padding:12px 0;
+  }
+
+  .menu{
+    gap:18px;
+    overflow-x:auto;
+    white-space:nowrap;
+    max-width:100%;
+    padding:0 15px;
+    justify-content:flex-start;
+    scrollbar-width:none;
+  }
+  .menu::-webkit-scrollbar{ display:none; }
+
+  .icon{ gap:25px; }
+
+  .offer{
+    flex-direction:column;
+    height:auto;
+    padding:20px 6%;
+    text-align:center;
+    gap:15px;
+  }
+  .offer p{ font-size:13px !important; }
+
+  .stor{
+    flex-direction:column;
+    height:auto;
+    gap:20px !important;
+    text-align:center;
+    padding:30px 0;
+  }
+  .store p{
+    font-size:42px !important;
+    margin-left:0 !important;
+    text-align:center;
+  }
+  .best{
+    width:90% !important;
+    margin:0 auto !important;
+  }
+  .best p{ font-size:18px !important; }
+  .best_link{
+    margin-left:0 !important;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    align-items:center;
+    height:auto;
+  }
+  .best_link a{ margin:0 !important; }
+
+  .product{
+    margin-left:0;
+    padding:0 15px;
+    gap:15px;
+    height:auto;
+    justify-content:flex-start;
+  }
+  .card{
+    width:110px;
+    height:auto;
+    margin-top:20px !important;
+    flex-shrink:0;
+  }
+  .card img{ width:85px; }
+  .card p{ font-size:14px; }
+
+  .lat{
+    margin-left:15px !important;
+    margin-top:30px;
+  }
+  .lat p{ font-size:20px !important; }
+
+  .product_card{
+    width:280px;
+    height:340px;
+    margin-left:15px;
+  }
+  .product_content h2{ font-size:24px !important; }
+  .product_content p{ font-size:12px !important; }
+  .product_content span{ font-size:14px !important; }
+
+  .iphone_stor{
+    flex-direction:column;
+    padding:20px 6% !important;
+    text-align:center;
+    gap:12px;
+  }
+  .iphone_store p{
+    font-size:32px !important;
+    margin-left:0 !important;
+    white-space:normal !important;
+    text-align:center;
+  }
+  .iphone_best{ text-align:center; }
+  .iphone_best_link a{
+    display:block;
+    margin:6px auto !important;
+    text-align:center;
+  }
+
+  .iphone_product_card{
+    width:260px;
+    height:340px;
+    margin-left:15px;
+  }
+  .iphone_product_content{ left:20px; }
+  .iphone_product_content h2{ font-size:20px !important; }
+
+  .product_bottom{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+    left:15px;
+    right:15px;
+    bottom:15px;
+  }
+  .price{ font-size:12px; }
+  .cart_btn{ margin-right:0; margin-bottom:0; }
+}
+
+@media (max-width: 480px) {
+
+  .logo, .logos img{ height:15px; }
+  .menu{ gap:14px; font-size:11px; }
+
+  .store p{ font-size:32px !important; }
+  .best p{ font-size:15px !important; }
+
+  .card{ width:90px; }
+  .card img{ width:65px; }
+  .card p{ font-size:12px; }
+
+  .product_card{ width:230px; height:300px; }
+  .product_content h2{ font-size:19px !important; }
+
+  .iphone_store p{ font-size:26px !important; }
+  .iphone_product_card{ width:220px; height:300px; }
+  .iphone_product_content h2{ font-size:17px !important; }
+  .price{ font-size:11px; }
+}
