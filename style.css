@@ -364,6 +364,9 @@ product_content span{
 }
 
 
+/* ========================================================= */
+/* RESPONSIVE / MOBILE STYLES                                 */
+/* ========================================================= */
 
 @media (max-width: 900px) {
 
@@ -446,14 +449,38 @@ product_content span{
   }
   .lat p{ font-size:20px !important; max-width:100%; }
 
-  .product_card{
-    width:280px;
-    height:340px;
+  /* Cards switch from absolute-positioned overlay layout to normal
+     stacked flow on mobile, so text can never overlap the image
+     regardless of each image's inline top/left/width values. */
+  .product_card, .iphone_product_card{
+    width:250px;
+    height:auto;
+    min-height:auto;
     margin-left:15px;
+    display:flex;
+    flex-direction:column;
+    padding-bottom:15px;
   }
-  .product_content h2{ font-size:24px !important; }
-  .product_content p{ font-size:12px !important; }
-  .product_content span{ font-size:14px !important; }
+
+  .product_content, .iphone_product_content{
+    position:static !important;
+    padding:16px 16px 0 16px;
+  }
+  .product_content h2, .iphone_product_content h2{ font-size:21px !important; margin-bottom:2px; }
+  .product_content p, .iphone_product_content p{ font-size:12px !important; }
+  .product_content span, .iphone_product_content span{ font-size:13px !important; }
+
+  .product_card img, .iphone_product_card img{
+    position:static !important;
+    top:auto !important;
+    left:auto !important;
+    right:auto !important;
+    bottom:auto !important;
+    display:block;
+    width:60% !important;
+    max-width:170px;
+    margin:10px auto 0 auto;
+  }
 
   .iphone_stor{
     flex-direction:column;
@@ -474,21 +501,14 @@ product_content span{
     text-align:center;
   }
 
-  .iphone_product_card{
-    width:260px;
-    height:340px;
-    margin-left:15px;
-  }
-  .iphone_product_content{ left:20px; }
-  .iphone_product_content h2{ font-size:20px !important; }
-
   .product_bottom{
+    position:static !important;
+    left:auto; right:auto; bottom:auto;
     flex-direction:column;
     align-items:flex-start;
     gap:10px;
-    left:15px;
-    right:15px;
-    bottom:15px;
+    padding:10px 16px 0 16px;
+    margin-top:auto;
   }
   .price{ font-size:12px; }
   .cart_btn{ margin-right:0; margin-bottom:0; }
@@ -506,11 +526,9 @@ product_content span{
   .card img{ width:65px; }
   .card p{ font-size:12px; }
 
-  .product_card{ width:230px; height:300px; }
-  .product_content h2{ font-size:19px !important; }
+  .product_card, .iphone_product_card{ width:210px; height:auto; }
+  .product_content h2, .iphone_product_content h2{ font-size:18px !important; }
 
   .iphone_store p{ font-size:26px !important; }
-  .iphone_product_card{ width:220px; height:300px; }
-  .iphone_product_content h2{ font-size:17px !important; }
   .price{ font-size:11px; }
 }
